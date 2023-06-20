@@ -32,3 +32,5 @@ Welcome to the Dice Game! This is a simple web-based game where players take tur
 If you want to keep your current score, click the "Hold" button. Your current score will be added to your total score.
 The first player to reach the score threshold (e.g., 100 points) wins the game.
 To start a new game, click the "New Game" button. It will reset all scores and start from scratch.
+
+Feel free to modify the game rules, score threshold, or add additional features as per your requirements.
