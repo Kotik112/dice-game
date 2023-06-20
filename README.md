@@ -4,12 +4,6 @@
 
 Welcome to the Dice Game! This is a simple web-based game where players take turns rolling a dice and accumulate scores. The objective is to reach a certain score threshold to win the game.
 
-## Table of Contents
-- [Game Rules](#game-rules)
-- [Technologies](#technologies)
-- [Usage](#usage)
-- [License](#license)
-
 ## Game Rules
 - The game is played between two players.
 - On each turn, a player rolls a dice and accumulates points based on the rolled number.
