@@ -1,5 +1,9 @@
 'use strict';
 
+// Variables used by the game logic.
+let score, currentScore, activePlayer, isPlaying;
+
+// Selection of elements
 const score0El = document.querySelector('#score--0');
 const score1El = document.getElementById('score--1');
 const current0El = document.getElementById('current--0');
@@ -30,8 +34,7 @@ const switchPlayer = function () {
 	currentScore = 0;
 };
 
-let score, currentScore, activePlayer, isPlaying;
-
+// Reset all game values
 const initGame = function () {
 	score = [0, 0];
 	currentScore = 0;
@@ -51,7 +54,7 @@ const initGame = function () {
 
 initGame();
 
-//rolling dice functionality
+// Rolling a dice logic
 btnRoll.addEventListener('click', function () {
 	if (isPlaying) {
 		// Generate a random dice roll
@@ -73,6 +76,7 @@ btnRoll.addEventListener('click', function () {
 	}
 });
 
+// Button logic for holding
 btnHold.addEventListener('click', function () {
 	if (isPlaying) {
 		score[activePlayer] += currentScore;
@@ -95,4 +99,5 @@ btnHold.addEventListener('click', function () {
 	}
 });
 
+// New game button
 btnNew.addEventListener('click', initGame);
